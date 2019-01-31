@@ -1,0 +1,135 @@
+
+delya@Adeliya MINGW64 ~
+$ cd /c
+
+delya@Adeliya MINGW64 /c
+$ cd git
+
+delya@Adeliya MINGW64 /c/git
+$ git clone https://github.com/Adeliyaa/Testing.git
+Cloning into 'Testing'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+delya@Adeliya MINGW64 /c/git
+$ ls
+Testing/
+
+delya@Adeliya MINGW64 /c/git
+$ ls
+Testing/
+
+delya@Adeliya MINGW64 /c/git
+$ cd testing
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ ls
+README.md  test.txt
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git add test.txt
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test.txt
+
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git commit -m "first commit" test.txt
+[master 0753206] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com':
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 70.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Adeliyaa/Testing.git
+   a6a0ec5..0753206  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git commit -m "first commit" test.txt
+[master 83622ec] first commit
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 449 bytes | 112.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Adeliyaa/Testing.git
+   0753206..83622ec  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ ^C
+
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git commit -m "third commit" test.txt
+[master d7acc66] third commit
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 21.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Adeliyaa/Testing.git
+   83622ec..d7acc66  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+delya@Adeliya MINGW64 /c/git/testing (master)
+$
