@@ -3,5 +3,6 @@ cd --> go to certain file
 ls --> see the content of the file 
 git clone --> "git clone REFERENCE" copy the github file(repositories) to computer(file in computer)
 git add --> "git add FILE NAME" upload file to git
-git commit --> "comment" file.name
- 
+git status --> show you the last modification 
+git commit -m "comment" file.name
+git push -u origin ---> upload to github
